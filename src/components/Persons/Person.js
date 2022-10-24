@@ -36,9 +36,7 @@ function Person({addPerson}){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    //    if (blog.title == "" && blog.body==""){
-    //     return
-    //    }
+  
         addPerson(person);
         
         setPerson({

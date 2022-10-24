@@ -11,9 +11,10 @@ function BlogList({blogs}){
             <li>{body}</li>
             </ul> */}
             <Container>
-                <Row>
-                    <Col xs={3}>{title}</Col>
-                    <Col xs={7}>{body}</Col>
+    
+                <Row>  
+                    <Col xs={2}>{title}</Col>
+                    <Col xs={5}>{body}</Col>
                 </Row>
                
            </Container>
@@ -22,6 +23,7 @@ function BlogList({blogs}){
     ));
         return (
             <ul>
+                Blog Posts
                 {blogItems}
             </ul>
         );

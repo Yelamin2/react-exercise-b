@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import CRUDForm from "./components/CRUDForm"
 import CRUDList from "./components/CRUDList"
 import {Row, Button, Form, Col, Container} from 'react-bootstrap';
+import { nanoid } from 'nanoid'
+
 
 const INITIAL_BLOG = [
     {
@@ -30,17 +32,37 @@ const INITIAL_BLOG = [
 ]
 
 function Blogs_CRUD(){
-
+   
     const [curdBlog, setCurdBlog]=useState(INITIAL_BLOG)
 
 
     const addFormBlog = (newFormBlog) => { 
         setCurdBlog([...curdBlog, newFormBlog]);
       }
+
+    const titleBlog =  (curdBlog).map((curdBlog) => (
+        <p key= {curdBlog.id} >
+            {curdBlog.title}
+        </p>
+    ));
+
+
+      console.log(CRUDList.title , curdBlog , titleBlog)
       return(
         <>
-        <CRUDForm addFormBlog={addFormBlog}/>
-        <CRUDList curdBlog={curdBlog}/>
+         <Form className="col-md-12" >
+           
+            
+           <Row >
+              <Col xs-4><CRUDForm addFormBlog={addFormBlog}/></Col>
+              <Col xs-8><CRUDList curdBlog={curdBlog}/></Col> 
+           </Row>
+           
+       </Form>
+        
+        
+      
+           
         </>
       )
 

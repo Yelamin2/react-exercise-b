@@ -40,6 +40,7 @@ function ReadBlog(){
         </p>
 
     ));
+    console.log(title)
 
     return(
         <>

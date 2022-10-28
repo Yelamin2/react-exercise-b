@@ -6,22 +6,22 @@ const Menu = () => {
     <>
         <Nav>
             <NavMenu>
-                <NavLink to = "/ReadBlog">
+                <NavLink to = "ReadBlog">
                     Blogs
                 </NavLink>
-                <NavLink to ="/BlogsForm" >
+                <NavLink to ="BlogsForm" >
                     Blog_Form
                 </NavLink>
-                <NavLink to = "/Person"  >
+                <NavLink to = "Person"  >
                     Person
                 </NavLink>
                 {/* <NavLink to = "/PersonsList"  >
                     Person_List
                 </NavLink> */}
-                <NavLink to ="/Bookmarks" >
+                <NavLink to ="Bookmarks" >
                     Bookmarks
                 </NavLink>
-                <NavLink to ="/Blogs_CRUD" >
+                <NavLink to ="Blogs_CRUD" >
                     Blogs_CRUD
                 </NavLink>
 

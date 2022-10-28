@@ -54,6 +54,7 @@ function ReadBlog(){
                   <p>{readBlog.blog}</p>
                 </>  
                 )}</Col>
+                
                 </Row>
                
            </Container>
